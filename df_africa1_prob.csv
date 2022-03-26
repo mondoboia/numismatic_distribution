@@ -1,0 +1,6 @@
+"Numidia","Proconsularis","Mauretania Tingitana","Mauretania Caesarea","Tripolitania"
+"Numidia",0,0.836,0.139,0.018,0.988
+"Proconsularis",0.836,0,0.999,0.949,0.633
+"Mauretania Tingitana",0.139,0.999,0,0.154,0.997
+"Mauretania Caesarea",0.018,0.949,0.154,0,1
+"Tripolitania",0.988,0.633,0.997,1,0
