@@ -17,7 +17,7 @@ colnames(results) <- row.names(x)
 return(results)}
 
 # Obtain input table 
-br.tab1 <- read.table(file='df_africa3.csv', sep=',', header=T, row.names=1) # the name of each row (site name) should be the first column in the input table
+br.tab1 <- read.table(file='df_africa1.csv', sep=',', header=T, row.names=1) # the name of each row (site name) should be the first column in the input table
 br.tab1 <- na.omit(br.tab1)
 
 # Ask for user if data are counts or percents
@@ -77,13 +77,13 @@ br.diff.out <- br.diff.out / randruns # Calculate probabilities based on random 
 row.names(br.diff.out) <- row.names(br.tab1)
 colnames(br.diff.out) <- row.names(br.tab1)
 
-write.table(br.diff.out,file='df_africa3_prob.csv',sep=',') # Write output
+write.table(br.diff.out,file='df_africa1_prob.csv',sep=',') # Write output
 
 } # close if statement for count data
 
 # Recalculate actual BR values and output to file
 br.tab <- prop.table(as.matrix(br.tab1),1)*100
 br.dat <- BR(br.tab)
-write.table(br.dat,file='df_africa3_out.csv',sep=',') # Write output
+write.table(br.dat,file='df_africa1_out.csv',sep=',') # Write output
 
 # end of script
